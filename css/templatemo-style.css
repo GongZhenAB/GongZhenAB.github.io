@@ -449,14 +449,18 @@ h5 {
   position: relative;
   z-index: 10;
   padding: 14px 0;
-  background: #ffffff44;
+  background: #ffffff25;
   backdrop-filter: blur(1px);
 }
 
 @media screen and (max-width: 992px) {
   .phone-info {
-    text-align: center;
+    text-align: left;
   }
+}
+
+.phone-info {
+  font-weight: bold;
 }
 
 .social-icons {
@@ -469,13 +473,12 @@ h5 {
 
 .social-icons li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 992px) {
   .social-icons {
-    text-align: center;
-    margin-top: 20px;
+    text-align: right;
   }
 
   .social-icons li:first-child {
@@ -505,27 +508,27 @@ h5 {
 }
 
 .homebutton {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 30px
+  background-color: #FFFFFF15;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
 }
 
 .aboutbutton {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 30px
+  background-color: #FFFFFF15;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
 }
 
 .projectbutton {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 30px
+  background-color: #FFFFFF15;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
 }
 
 .contactbutton {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 30px
+  background-color: #FFFFFF15;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
 }
 
 .logo-top-margin {
@@ -551,11 +554,11 @@ h5 {
 
 .toggle-menu {
   color: white !important;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF15;
   padding: 10px 25px;
   text-transform: uppercase;
   font-family: 'robotoregular';
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   border-radius: 10px;
   display: inline-block;
 }
@@ -565,15 +568,13 @@ h5 {
 }
 
 .show-menu {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
   display: none;
 }
 
 .show-menu li {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
 }
 
 .show-menu li:last-child {
