@@ -18,7 +18,7 @@
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .homepage").slideDown('slow');
 		$(".logo-top-margin").animate({marginLeft:'39%'}, "slow");
-		$(".logo-top-margin").animate({marginTop:'120px'}, "slow");
+		$(".logo-top-margin").animate({marginTop:'200px'}, "slow");
 		return false;
 	});
 
