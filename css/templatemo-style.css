@@ -662,17 +662,19 @@ h5 {
   line-height: 42px;
   text-align: center;
   color: #333333;
-  background: #dddddd;
+  background: #eeeeee;
+  border-radius: 10px;
 }
 
 .about-social a:hover {
-  background: #5cb48e;
+  background: #808080;
   color: white;
+  border-radius: 10px;
 }
 
 .progess-bars span {
   font-size: 13px;
-  color: #5cb48e;
+  color: #707070;
 }
 
 .progress {
@@ -681,11 +683,13 @@ h5 {
   box-shadow: none;
   background: #e8f4ef;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .progress-bar {
   box-shadow: none;
-  background: #5cb48e;
+  background: #909090;
+  border-radius: 5px;
 }
 
 /*------ projects ------ */
@@ -740,11 +744,11 @@ h5 {
   text-align: center;
   line-height: 34px;
   display: block;
-  background: #dddddd;
+  background: #eeeeee;
 }
 
 .project-pages a:hover {
-  background: #5cb48e;
+  background: #808080;
   color: white;
 }
 
