@@ -1,0 +1,800 @@
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/Roboto-Bold-webfont.eot");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.green {
+  color: #9F3;
+}
+
+.orange {
+  color: #FC0;
+}
+
+.blue {
+  color: #06C;
+}
+
+.copyrights {
+  text-indent: -9999px;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/*---------------------------------------------------------
+ 1. Reset
+-------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]:-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------
+ 2. Basic Style
+-------------------------------------------------------- */
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  font-family: 'robotolight';
+}
+
+a {
+  color: #5cb48e;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #e67887;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+{
+color: #FFFFFF;
+}
+
+p {
+  color: #EEEEEE;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  color: #666;
+}
+
+.site-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-image: url(../images/background.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.site-bg-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #00000050;
+  backdrop-filter: blur(3px);
+}
+
+#page-content {
+  position: relative;
+  z-index: 12;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  #page-content {
+    margin-top: 0;
+  }
+}
+
+.content {
+  display: none;
+}
+
+.box-content {
+  background-color: #F0F0F050;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  font-family: 'robotolight';
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.box-content .widget-title {
+  font-size: 22px;
+  font-family: 'robotolight';
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.form-notice {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.welcome-text {
+  position: relative;
+  margin-top: 45px;
+}
+
+.welcome-text h2 {
+  color: pink;
+  font-size: 20px;
+  text-shadow: 1.5px 1.5px 1.5px #00000050;
+  font-family: 'robotolight';
+}
+
+#hitokoto_text {
+  margin-top: 15px;
+  padding: 5px 15px;
+  color: #ffe1dc;
+  background-color: #F0F0F030;
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.subscribe-form {
+  margin-top: 80px;
+}
+
+.subscribe-form input.email {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: 0;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.subscribe-form .button-holder {
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .subscribe-form .button-holder {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.subscribe-form p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.subscribe-form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.subscribe-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.subscribe-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.subscribe-form :-ms-input-placeholder {
+  color: #fff;
+}
+
+/*---------------------------------------------------------
+ 3. Header
+-------------------------------------------------------- */
+.top-header {
+  position: relative;
+  z-index: 10;
+  padding: 10px 0;
+  background: #ffffff25;
+  backdrop-filter: blur(1px);
+  box-shadow: 0px 0px 5px #00000050;
+}
+
+.phone-info {
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .phone-info {
+    text-align: center;
+  }
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.social-icons a {
+  color: #FFFFFF;
+}
+
+.social-icons a:hover {
+  color: pink;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .social-icons {
+    text-align: center;
+  }
+
+  .social-icons li:first-child {
+    margin-left: 0;
+  }
+}
+
+#nav a {
+  display: block;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+#nav li {
+  margin-bottom: 30px;
+}
+
+#nav i {
+  padding-top: 50px;
+  display: block;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.homebutton,
+.aboutbutton,
+.projectbutton,
+.contactbutton {
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+}
+
+.logo-top-margin {
+  position: relative;
+  margin-top: 200px;
+  margin-left: 39%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-top-margin {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.responsive-menu {
+  position: relative;
+  text-align: center;
+  z-index: 99;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.toggle-menu {
+  color: white !important;
+  background-color: #FFFFFF15;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-family: 'robotoregular';
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.toggle-menu i {
+  margin-right: 15px;
+}
+
+.show-menu {
+  display: none;
+}
+
+.show-menu li {
+  display: block;
+  border-bottom: 1px solid #00000026;
+
+}
+
+.show-menu li:last-child {
+  border-bottom: 0;
+}
+
+.show-menu a {
+  padding: 15px 20px;
+  display: inline-block;
+  width: 90%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  background: transparent;
+}
+
+.show-menu a i {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-holder {
+    text-align: center;
+  }
+}
+
+/*---------------------------------------------------------
+ 4. Main Content
+-------------------------------------------------------- */
+/*------ banner ------ */
+.profile {
+  overflow: hidden;
+}
+
+.profile-thumb {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #dddddd;
+  overflow: hidden;
+  margin-right: 25px;
+  float: left;
+}
+
+.profile-thumb img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-thumb {
+    float: none;
+    margin-bottom: 25px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+.profile-content {
+  overflow: hidden;
+}
+
+.profile-name {
+  font-family: 'robotoregular';
+  font-size: 18px;
+}
+
+.profile-role {
+  font-size: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about-social {
+  margin-top: 30px;
+}
+
+.about-social li {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.about-social a {
+  margin-right: 5px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FFFFFF10;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.about-social a:hover {
+  color: #FFFFFF;
+  background: pink;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-social a {
+    margin-right: auto;
+  }
+}
+
+.progess-bars span {
+  font-size: 13px;
+  color: #EEEEEE;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  background: #FFFFFF50;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  box-shadow: none;
+  background: #ffc0cb95;
+  border-radius: 5px;
+}
+
+/*------ projects ------ */
+.gallery-section .project-item {
+  margin-bottom: 30px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.project-item:hover .project-hover {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+
+.project-hover {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  background: #80808050;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 14px 20px;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.project-hover h4 {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.project-pages li {
+  display: inline-block;
+}
+
+.project-pages a {
+  width: 34px;
+  height: 34px;
+  color: #333333;
+  background: #FFFFFF10;
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  text-align: center;
+  line-height: 34px;
+  display: block;
+  border-radius: 7px;
+}
+
+.project-pages a:hover {
+  color: #FFFFFF;
+  background: pink;
+}
+
+/*------ contact ------ */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  outline: 0;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  background-color: #AAAAAA30;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  color: #FFFFFF;
+  background: #80808050;
+}
+
+.contact-form input.button {
+  width: 65px;
+  height: 35px;
+  color: #333333;
+  background: #EEEEEE50;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  margin-bottom: 0;
+}
+
+.contact-form input.button:hover {
+  color: #FFFFFF;
+  background: pink;
+}
