@@ -30,7 +30,7 @@
 		return false;
 	});
 
-	$(".main-menu a.projectbutton").click(function(){
+	$(".main-menu a.picturebutton").click(function(){
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .gallery-section").slideDown('slow');
 		$(".logo-top-margin").animate({marginTop:'0'}, "slow");

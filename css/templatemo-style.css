@@ -1,50 +1,17 @@
 @font-face {
-  font-family: 'robotolight';
-  src: url("../fonts/Roboto-Light-webfont.eot");
-  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotoregular';
-  src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.green {
-  color: #9F3;
-}
-
-.orange {
-  color: #FC0;
-}
-
-.blue {
-  color: #06C;
-}
-
-.copyrights {
-  text-indent: -9999px;
-  height: 0;
-  line-height: 0;
-  font-size: 0;
-  overflow: hidden;
+  font-family: HarmonyOS_Sans_Regular;
+  src: url(../fonts/HarmonyOS_Sans_Regular.ttf);
 }
 
 /*---------------------------------------------------------
  1. Reset
 -------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: HarmonyOS_Sans_Regular;
+}
+
 html,
 body,
 div,
@@ -267,7 +234,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: white;
-  font-family: 'robotolight';
 }
 
 a {
@@ -281,7 +247,7 @@ a {
 }
 
 a:hover {
-  color: #333333;
+  color: #e67887;
 }
 
 h1,
@@ -289,7 +255,11 @@ h2,
 h3,
 h4,
 h5 {
-  color: #333333;
+  color: #FFFFFF;
+}
+
+p {
+  color: #EEEEEE;
 }
 
 ::-webkit-input-placeholder {
@@ -315,10 +285,7 @@ h5 {
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-image: url(../images/background.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  object-fit: cover;
 }
 
 .site-bg-overlay {
@@ -329,7 +296,6 @@ h5 {
   left: 0;
   z-index: 1;
   background: #00000050;
-  backdrop-filter: blur(2px);
 }
 
 #page-content {
@@ -349,35 +315,39 @@ h5 {
 }
 
 .box-content {
-  background: white;
-  color: #555;
-  font-family: 'robotolight';
+  background-color: #F0F0F010;
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
   padding: 30px;
   margin-top: 30px;
 }
 
 .box-content .widget-title {
   font-size: 22px;
-  color: #333;
-  font-family: 'robotolight';
   margin-bottom: 30px;
+  display: inline-block;
+}
+
+.form-notice {
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .welcome-text {
   position: relative;
-  margin-top: 60px;
+  margin-top: 45px;
+  padding: 30px 10px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 15px #00000030;
+  border-radius: 20px;
 }
 
 .welcome-text h2 {
-  font-size: 32px;
-  font-family: 'robotolight';
-  margin-bottom: 30px;
-  color: white;
-}
-
-.welcome-text p {
-  font-size: 18px;
-  font-family: 'robotolight';
+  color: pink;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #00000050;
 }
 
 .subscribe-form {
@@ -394,18 +364,6 @@ h5 {
   width: 100%;
   display: inline-block;
   font-size: 14px;
-}
-
-.subscribe-form input.button {
-  background: #5cb48e;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 10px 20px;
-  outline: 0;
-  border: 0;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
 
 .subscribe-form .button-holder {
@@ -448,19 +406,23 @@ h5 {
 .top-header {
   position: relative;
   z-index: 10;
-  padding: 14px 0;
+  padding: 10px 0;
   background: #ffffff25;
   backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  box-shadow: 0px 0px 15px #00000050;
+}
+
+.title {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: left;
 }
 
 @media screen and (max-width: 992px) {
-  .phone-info {
-    text-align: left;
+  .title {
+    text-align: center;
   }
-}
-
-.phone-info {
-  font-weight: bold;
 }
 
 .social-icons {
@@ -468,17 +430,21 @@ h5 {
 }
 
 .social-icons a {
-  color: white;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.social-icons a:hover {
+  color: pink;
 }
 
 .social-icons li {
   display: inline-block;
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 992px) {
   .social-icons {
-    text-align: right;
+    text-align: center;
   }
 
   .social-icons li:first-child {
@@ -507,28 +473,27 @@ h5 {
   margin-bottom: 10px;
 }
 
-.homebutton {
-  background-color: #FFFFFF10;
-  backdrop-filter: blur(3px);
-  border-radius: 30px;
-}
-
-.aboutbutton {
-  background-color: #FFFFFF10;
-  backdrop-filter: blur(3px);
-  border-radius: 30px;
-}
-
-.projectbutton {
-  background-color: #FFFFFF10;
-  backdrop-filter: blur(3px);
-  border-radius: 30px;
-}
-
+.homebutton,
+.aboutbutton,
+.picturebutton,
 .contactbutton {
   background-color: #FFFFFF10;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .homebutton,
+  .aboutbutton,
+  .picturebutton,
+  .contactbutton {
+    background-color: none;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    border-radius: 30px;
+  }
 }
 
 .logo-top-margin {
@@ -557,8 +522,8 @@ h5 {
   background-color: #FFFFFF15;
   padding: 10px 25px;
   text-transform: uppercase;
-  font-family: 'robotoregular';
   backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   border-radius: 10px;
   display: inline-block;
 }
@@ -573,12 +538,6 @@ h5 {
 
 .show-menu li {
   display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-
-}
-
-.show-menu li:last-child {
-  border-bottom: 0;
 }
 
 .show-menu a {
@@ -637,88 +596,98 @@ h5 {
 }
 
 .profile-name {
-  font-family: 'robotoregular';
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .profile-role {
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 20px;
   display: block;
 }
 
-.about-social {
+.profile-links {
   margin-top: 30px;
 }
 
-.about-social li {
+.profile-links li {
   display: inline-block;
   margin-bottom: 3px;
 }
 
-.about-social a {
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+.profile-links a {
+  margin-right: 5px;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 16px;
   text-align: center;
-  color: #333333;
-  background: #eeeeee;
-  border-radius: 10px;
+  color: #FFFFFF;
+  background: #FFFFFF10;
+  border-radius: 43px;
 }
 
-.about-social a:hover {
-  background: #808080;
-  color: white;
-  border-radius: 10px;
+.profile-links a:hover {
+  color: #FFFFFF;
+  background: pink;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-links a {
+    margin-right: auto;
+  }
 }
 
 .progess-bars span {
   font-size: 13px;
-  color: #707070;
+  color: #EEEEEE;
 }
 
 .progress {
   height: 10px;
   border-radius: 0;
   box-shadow: none;
-  background: #e8f4ef;
+  background: #FFFFFF50;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
 .progress-bar {
   box-shadow: none;
-  background: #909090;
+  background: #ffc0cb;
   border-radius: 5px;
 }
 
-/*------ projects ------ */
-.gallery-section .project-item {
+/*------ pictures ------ */
+.gallery-section .picture-item {
   margin-bottom: 30px;
 }
 
-.project-item {
+.picture-item {
   position: relative;
   overflow: hidden;
 }
 
-.project-item img {
+.picture-item img {
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
-.project-item:hover .project-hover {
+.picture-item:hover .picture-hover {
   opacity: 1;
   visibility: visible;
   bottom: 0;
 }
 
-.project-hover {
+.picture-hover {
   position: absolute;
   bottom: -20px;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: #80808050;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
   opacity: 0;
   visibility: hidden;
   padding: 14px 20px;
@@ -729,27 +698,31 @@ h5 {
   transition: all 200ms linear;
 }
 
-.project-hover h4 {
+.picture-hover h4 {
   color: white;
+  font-weight: bolder;
+  text-align: center;
 }
 
-.project-pages li {
+.picture-pages li {
   display: inline-block;
 }
 
-.project-pages a {
-  width: 34px;
-  height: 34px;
-  color: #333333;
+.picture-pages a {
+  width: 35px;
+  height: 35px;
+  color: #FFFFFF;
+  background: #FFFFFF10;
+  font-weight: bold;
   text-align: center;
   line-height: 34px;
   display: block;
-  background: #eeeeee;
+  border-radius: 7px;
 }
 
-.project-pages a:hover {
-  background: #808080;
-  color: white;
+.picture-pages a:hover {
+  color: #FFFFFF;
+  background: pink;
 }
 
 /*------ contact ------ */
@@ -760,34 +733,30 @@ h5 {
   padding: 8px 10px;
   margin-bottom: 20px;
   max-width: 100%;
-  border: 1px solid #dddddd;
+  background-color: #AAAAAA30;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  color: #FFFFFF;
+  background: #80808050;
 }
 
 .contact-form input.button {
-  width: auto;
-  color: white;
-  background: #5cb48e;
+  width: 65px;
+  height: 35px;
+  color: #333333;
+  background: #EEEEEE50;
+  border-radius: 10px;
   text-transform: uppercase;
   border: 0;
   outline: 0;
   margin-bottom: 0;
-  padding: 12px 18px;
 }
 
-/*---------------------------------------------------------
- 5. Footer
--------------------------------------------------------- */
-.site-footer {
-  position: relative;
-  z-index: 11;
-  padding: 14px 0;
-  background: rgba(0, 0, 0, 0.7);
-  margin-top: 30px;
+.contact-form input.button:hover {
+  color: #FFFFFF;
+  background: pink;
 }
-
-.site-footer a {
-  color: #5cb48e;
-}
-
-
-/* Custom */

@@ -10,7 +10,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ckize的主页</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
@@ -19,7 +18,7 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="icon" href="./favicon.ico">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <title>Ckize的主页</title>
 </head>
 
 <body>
@@ -27,31 +26,34 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="site-bg"></div>
+    <video class="site-bg" src="./media/background.mp4" muted="true" autoplay="autoplay" preload="auto"
+        loop="loop"></video>
     <div class="site-bg-overlay"></div>
 
-    <!-- TOP HEADER -->
+    <!-- 标题栏 -->
     <div class="top-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <p class="phone-info">Ckize的主页</p>
+                    <p class="title">Ckize的主页</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="social-icons">
                         <ul>
-                            <li><a href="https://space.bilibili.com/553097381" target="_blank" class="fa fa-youtube-play"></a></li>
-                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=870404698&site=qq&menu=yes" target="_blank" class="fa fa-qq"></a></li>
+                            <li><a href="https://space.bilibili.com/553097381" target="_blank"
+                                    class="fa fa-youtube-play"></a></li>
+                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=870404698&site=qq&menu=yes" target="_blank"
+                                    class="fa fa-qq"></a></li>
                             <li><a href="./images/QRcode.png" target="_blank" class="fa fa-weixin"></a></li>
                             <li><a href="https://github.com/GongZhenAB" target="_blank" class="fa fa-github"></a></li>
-                            <li><a href="https://steamcommunity.com/profiles/76561199037641939/" target="_blank" class="fa fa-steam"></a></li>
+                            <li><a href="https://steamcommunity.com/profiles/76561199037641939/" target="_blank"
+                                    class="fa fa-steam"></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- .top-header -->
-
+    </div>
 
     <div class="visible-xs visible-sm responsive-menu">
         <a href="#" class="toggle-menu">
@@ -66,7 +68,7 @@
                     <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>关于我</a>
                 </li>
                 <li>
-                    <a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>图库</a>
+                    <a class="show-3 picturebutton" href="#"><i class="fa fa-camera"></i>图册</a>
                 </li>
                 <li>
                     <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>联系我</a>
@@ -80,26 +82,19 @@
 
 
             <div class="col-md-9 col-sm-12 content-holder">
-                <!-- CONTENT -->
+                <!-- Content -->
                 <div id="menu-container">
 
                     <div class="logo-holder logo-top-margin">
-                        <a href="#" class="site-brand"><img src="images/logo.png" alt=""></a>
+                        <img src="images/logo.png" alt="">
                     </div>
 
 
                     <div id="menu-1" class="homepage home-section text-center">
                         <div class="welcome-text">
-                            <h2 style="color: rgba(265, 130, 200, 0.9); font-size: 25px; text-shadow: 2px 2px 2px #00000050;"><strong>欢迎来到我的主页</strong></h2>
-                            <p style="color: rgba(120, 190, 255, 0.9); font-size: 21px; text-shadow: 1.5px 1.5px 1.5px #00000050;"><strong>我是Ckize，一名初中生。喜欢编程，听音乐和看番</strong></p>
-                            <br>
-                            <!--一言-->
-                            <!--
-                            <p style="margin: 10px 10px; color: rgb(200, 222, 255); background-color: #00000050; border-radius: 7px; font-size: 20px;"
-                                ; id="hitokoto">
-                                <a href="#" id="hitokoto_text">一言获取中...</a>
-                            </p>
-                            -->
+                            <h2>
+                                樱花下落的速度是每秒5厘米，我要用什么样的速度，才能与你相遇？
+                            </h2>
                         </div>
                     </div>
 
@@ -111,36 +106,45 @@
                                     <div class="profile-content">
                                         <h5 class="profile-name">Ckize</h5>
                                         <span class="profile-role">Parabola Studio 负责人，在读初中生</span>
-                                        <p>最喜欢的书是《解忧杂货铺》，最爱玩的游戏是《Minecradt》，没有文采</p>
-                                        <br>
-                                        <p><strong>平时会比较忙，周末全天在线</strong></p>
+                                        <p>最喜欢的书是《解忧杂货铺》，最爱玩的游戏是《Minecraft》</p>
+                                        <div class="profile-links">
+                                            <ul>
+                                                <li><a href="./images/QRcode.png" target="_blank"
+                                                        class="fa fa-weixin"></a>
+                                                </li>
+                                                <li><a href="http://wpa.qq.com/msgrd?v=3&uin=870404698&site=qq&menu=yes"
+                                                        target="_blank" class="fa fa-qq"></a></li>
+                                                <li><a href="https://space.bilibili.com/553097381" target="_blank"
+                                                        class="fa fa-youtube-play"></a></li>
+                                                <li><a href="mailto:870404698@qq.com" class="fa fa-envelope"></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <div class="box-content">
-                                    <h3 class="widget-title">生平经历</h3>
-                                    <p style="line-height: 89%;">没啥好拿得出手的怎么办捏(笑)</p>
-                                    <br>
-                                    <p>捐助过联合国(doge)</p>
-                                    <div class="about-social">
-                                        <ul>
-                                            <li><a href="./images/QRcode.png" target="_blank" class="fa fa-weixin"></a></li>
-                                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=870404698&site=qq&menu=yes" target="_blank" class="fa fa-qq"></a></li>
-                                            <li><a href="https://space.bilibili.com/553097381" target="_blank" class="fa fa-youtube-play"></a></li>
-                                            <li><a href="mailto:870404698@qq.com" target="_blank" class="fa fa-envelope"></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3 class="widget-title">沙扬挪拉</h3><span style="margin-left: 25px;"
+                                        title="渣男">徐志摩</span>
+                                    <p>
+                                        最是那一低头的温柔，<br>
+                                        像一朵水莲花不胜凉风的娇羞，<br>
+                                        <br>
+                                        道一声珍重，道一声珍重，<br>
+                                        那一声珍重里有蜜甜的忧愁——<br>
+                                        <br>
+                                        沙扬娜拉！
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-5 col-sm-5">
                                 <div class="box-content">
-                                    <h3 class="widget-title">挂张图</h3>
-                                    <div class="project-item">
-                                        <img src="images/7.png" alt="">
-                                        <div class="project-hover">
+                                    <h3 class="widget-title">贴张图</h3>
+                                    <div class="picture-item">
+                                        <img src="images/profile-image.png" alt="">
+                                        <div class="picture-hover">
                                             <h4>Minecraft</h4>
                                         </div>
                                     </div>
@@ -148,28 +152,28 @@
                             </div>
                             <div class="col-md-7 col-sm-7">
                                 <div class="box-content">
-                                    <h3 class="widget-title" style="line-height: 166%;">我的技能</h3>
+                                    <h3 class="widget-title" style="line-height: 166%;">技术</h3>
                                     <ul class="progess-bars">
                                         <li>
-                                            <span>C++ 45%</span>
+                                            <span>HTML CSS 75%</span>
                                             <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="45"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <span>html css 50%</span>
+                                            <span>Photoshop 25%</span>
                                             <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="50"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                            </div>
+                                        <li>
+                                            <span>同步率 400%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="400"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 400%;"></div>
                                             </div>
                                         </li>
-                                        <li>
-                                            <span>Photoshop 30%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="30"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -179,58 +183,58 @@
 
                     <div id="menu-3" class="content gallery-section">
                         <div class="box-content">
-                            <h3 class="widget-title">图片</h3>
+                            <h3 class="widget-title">图册</h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/1.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>1</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/2.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>2</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/3.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>3</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/4.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>4</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/5.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>5</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-item">
+                                    <div class="picture-item">
                                         <img src="images/6.png" alt="">
-                                        <div class="project-hover">
+                                        <div class="picture-hover">
                                             <h4>6</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-pages">
+                            <div class="picture-pages">
                                 <ul>
                                     <li><a href="1">1</a></li>
                                     <li><a href="2">2</a></li>
@@ -246,7 +250,8 @@
                             <div class="col-md-8 col-sm-8">
                                 <div class="box-content">
                                     <h3 class="widget-title">给我发邮件</h3>
-                                    <form class="contact-form">
+                                    <h5 class="form-notice">此功能暂不可用</h5>
+                                    <!--form class="contact-form">
                                         <fieldset>
                                             <input type="text" class="name" id="name" placeholder="名字">
                                         </fieldset>
@@ -260,7 +265,7 @@
                                         <fieldset>
                                             <input type="submit" class="button" id="button" value="发送">
                                         </fieldset>
-                                    </form>
+                                    </form-->
                                 </div>
                             </div>
                         </div>
@@ -281,7 +286,7 @@
                             <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>关于我</a>
                         </li>
                         <li>
-                            <a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>图库</a>
+                            <a class="show-3 picturebutton" href="#"><i class="fa fa-camera"></i>图册</a>
                         </li>
                         <li>
                             <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>联系我</a>
@@ -292,12 +297,10 @@
             </div>
         </div>
     </div>
-    <audio src="music/earth meal.mp3" id="aud" autoplay="autoplay" preload="auto" loop="loop"></audio>
-
+    <audio src="media/bgmusic.mp3" id="aud" autoplay="autoplay" preload="auto" loop="loop"></audio>
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <!-- templatemo 439 rectangle -->
 </body>
 
 </html>
