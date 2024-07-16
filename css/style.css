@@ -306,3 +306,39 @@ nav {
     height: 100%;
     float: left;
 }
+
+/*----- 移动端适配 -----*/
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+    }
+
+    #hitokoto {
+        margin-top: 0.25rem;
+        color: #F0F0F0;
+        font-size: small;
+        text-overflow: clip;
+    }
+
+    #hitokoto>span {
+        display: block;
+    }
+
+    .side {
+        top: 5rem;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 5rem);
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .video,
+    .music {
+        display: none;
+    }
+}
