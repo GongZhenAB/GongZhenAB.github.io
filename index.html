@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <script>/*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4599532_b81nh4gzkab.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel=" icon" href="https://github.com/GongZhenAB.png">
+    <title>Ckize 的主页</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- 导航栏 -->
+    <nav>
+        <p><strong style="font-size: large;">Ckize</strong></p>
+        <p id="hitokoto">
+            <span id="hitokoto_text"></span>
+            <span id="hitokoto_from"></span>
+        </p>
+    </nav>
+
+    <!-- 内容 -->
+    <div class="side">
+        <img src="https://github.com/GongZhenAB.png" alt="profile-image">
+        <div class="intro">
+            <p>Hello World!</p>
+            <p>I'm <span>Ckize</span></p>
+            <span>Transmark 创始人，学生，二次元</span>
+        </div>
+        <div class="friend card">
+            <h3>加个好友吧 ( •̀ ω •́ )✧</h3>
+            <div class="links">
+                <a href="https://space.bilibili.com/553097381" class="iconfont icon-bilibili" target="_blank"></a>
+                <a href="https://github.com/GongZhenAB" class="iconfont icon-github" target="_blank"></a>
+                <a href="https://steamcommunity.com/profiles/76561199037641939/" class="iconfont icon-steam"
+                    target="_blank"></a>
+                <a href="mailto:870404698@qq.com" class="iconfont icon-mail"></a>
+            </div>
+            <div class="QRcode">
+                <img src="./src/QRcode-Wechat.jpg" alt="Wechat">
+                <img src="./src/Qrcode-QQ.jpg" alt="QQ">
+            </div>
+        </div>
+        <div class="music card">
+            <img src="./src/music-cover.jpg" alt="cover">
+            <h3>奏 (かなで)</h3>
+            <p>雨宫天</p>
+            <button id="play" class="iconfont icon-play"></button>
+            <audio src="./src/bgmusic.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <section>
+                <h1>随笔</h1>
+                <div class="articles">
+                    <div class="article">
+                        <h2>2月7日</h2>
+                        <p>重新写了网站</p>
+                    </div>
+            </section>
+
+            <section>
+                <h1>我的作品</h1>
+                <div class="works">
+                    <div>
+                        <img src="./images/work-1.jpg">
+                        <div>
+                            <span>Cosine OS</span>
+                            <a href="https://www.transmark.tech/cosine-os/" target="_blank">前往</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/work-2.jpg">
+                        <div>
+                            <span>Flip Start</span>
+                            <a href="https://www.transmark.tech/flip/intro/" target="_blank">前往</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/work-3.jpg">
+                        <div>
+                            <span>Rhythm Music</span>
+                            <a href="" target="_blank" onclick="return false;">敬请期待</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>精选图片</h1>
+                <div class="gallery">
+                    <div class="img">
+                        <img src="./images/img-1.png">
+                        <div>上</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-2.png">
+                        <div>坂</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-3.png">
+                        <div>堇</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-4.png">
+                        <div>最</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-5.png">
+                        <div>高</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-6.png">
+                        <div>政</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-7.png">
+                        <div>委</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-8.png">
+                        <div>大</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-9.png">
+                        <div>好</div>
+                    </div>
+                    <div class="img">
+                        <img src="./images/img-10.png">
+                        <div>き</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        //一言
+        fetch('https://v1.hitokoto.cn/?c=a&c=b')
+            .then(response => response.json())
+            .then(data => {
+                const textElement = document.querySelector('#hitokoto_text');
+                const fromElement = document.querySelector('#hitokoto_from');
+                textElement.textContent = data.hitokoto;
+                fromElement.textContent = '—— ' + data.from;
+            })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
